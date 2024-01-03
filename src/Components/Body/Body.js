@@ -1,5 +1,6 @@
 import About from "./About"
 import Blog from "./Blog"
+import Contact from "./Contact"
 import Experience from "./Experience"
 import Home from "./Home"
 const Body = () => {
@@ -11,6 +12,7 @@ const Body = () => {
       <About />
       <Experience />
       <Blog />
+      <Contact />
     </>
   )
 }

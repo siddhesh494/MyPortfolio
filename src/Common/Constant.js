@@ -72,3 +72,7 @@ export const EXPERIENCE = {
     }
   ]
 }
+
+export const LINKEDLN_LINK = "https://www.linkedin.com/in/siddhesh-shinde-developer/"
+
+export const EMAIL_LINK = "https://mail.google.com/mail/u/1/#inbox?compose=CllgCJvrcCpCdcTFmLCjhPFhtXCFcCCSTkfDBFMGBVHGlgZvpbnthKhGgpTPcRrXdLBqLNHfhGq"

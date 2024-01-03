@@ -14,7 +14,18 @@ const Home = () => {
         <span className="text-xl">Hello I'm</span>
         <span className="text-3xl">Siddhesh Shinde</span>
         <span className="text-2xl">I'm a Full Stack Developer</span>
+        <div className='mt-3'>
+          <a
+            className='px-6 py-2 border border-black rounded-xl hover:bg-black hover:text-white'
+            href='./CV.pdf'
+            download="Siddhesh_Shinde_CV.pdf"
+            
+          >
+            Download CV
+          </a>
+        </div>
       </div>
+      
     </div>
   )
 }

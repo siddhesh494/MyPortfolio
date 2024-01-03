@@ -1,4 +1,6 @@
 import MyPhoto1 from '../../assests/Photos/my3.jpg'
+import Education from '../../assests/PNGs/graduation-cap.png'
+import Job from '../../assests/PNGs/briefcase.png'
 
 
 const About = () => {
@@ -20,13 +22,16 @@ const About = () => {
 
         <div className="flex justify-center flex-col items-center mx-10">
           <div className="flex flex-col gap-10 sm:flex-row ">
-            <div className="border border-black py-5 px-20 rounded-3xl flex text-center flex-col hover:shadow-xl">
+            <div className="border border-black py-5 px-20 rounded-3xl flex items-center text-center flex-col hover:shadow-xl">
+              <img src={Job} className='w-7' />
+              
               <span className="font-bold">Experience</span>
               <span>2+ Year</span>
               <span>Full Stack Developer</span>
             </div>
 
-            <div className="border border-black py-5 px-20 rounded-3xl flex text-center flex-col hover:shadow-xl">
+            <div className="border border-black py-5 px-20 rounded-3xl flex items-center text-center flex-col hover:shadow-xl">
+              <img src={Education} className='w-7' />
               <span className="font-bold">Education</span>
               <span>Bachelor of Engineering</span>
               <span>Higher Secondary Certificate </span>
