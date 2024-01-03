@@ -6,7 +6,7 @@ import Job from '../../assests/PNGs/briefcase.png'
 const About = () => {
 
   return (
-    <div className=" my-40">
+    <div className=" my-28">
       <div className="flex flex-col text-center">
         <span className="text-md">Get To Know Me</span>
         <span className="text-4xl">About Me</span>

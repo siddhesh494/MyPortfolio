@@ -4,7 +4,7 @@ import { map } from 'lodash'
 const Experience = () => {
 
   return (
-    <div className=" my-40">
+    <div className="my-28">
       <div className="flex flex-col text-center">
         <span className="text-md">Explore My</span>
         <span className="text-4xl">Experience</span>
@@ -18,8 +18,8 @@ const Experience = () => {
             {map(EXPERIENCE.Web_Technologies, (item, index) => {
               return (
                 <div className="grid col-span-6 " key={index}>
-                  <span className="text-lg">{item.technology}</span>
-                  <span>{item.level}</span>
+                  <span className="text-lg font-medium	">{item.technology}</span>
+                  <span className='text-slate-600'>{item.level}</span>
                 </div>
               )
             })}
@@ -33,8 +33,8 @@ const Experience = () => {
             {map(EXPERIENCE.others, (item, index) => {
               return (
                 <div className="grid col-span-6 " key={index}>
-                  <span className="text-lg">{item.technology}</span>
-                  <span>{item.level}</span>
+                  <span className="text-lg font-medium">{item.technology}</span>
+                  <span className='text-slate-600'>{item.level}</span>
                 </div>
               )
             })}

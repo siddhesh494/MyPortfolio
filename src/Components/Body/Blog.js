@@ -1,9 +1,9 @@
 import { map, filter } from 'lodash'
 import { useEffect, useState } from 'react'
-import { serialize, deserialize } from "react-serialize"
 import UpArrow from '../../assests/PNGs/angle-up.png'
 import DownArrow from '../../assests/PNGs/angle-down.png'
 import mediumBlog from '../../MockData/mediumBlog.json'
+import Dummy1 from '../../assests/Photos/d1.jpg'
 
 const Blog = () => {
   // const [myAllPost, setMyAllPost] = useState([])
@@ -61,7 +61,7 @@ const Blog = () => {
   // }
 
   return (
-    <div className=" my-40">
+    <div className="my-28">
       <div className="flex flex-col text-center">
         <span className="text-md">Read My Recent</span>
         <span className="text-4xl">Blogs</span>
@@ -72,13 +72,18 @@ const Blog = () => {
         {map(blog, (item) => {
             return (
               <div 
-                className="cursor-pointer border border-black rounded-3xl w-56 py-20 text-center hover:shadow-xl" 
+                className="cursor-pointer border border-zinc-300 rounded-3xl w-56 pb-4 text-center hover:shadow-xl"
                 key={item.id}
                 onClick={() => {
                   window.open(item.blogLink,'_newtab')
                 }}
               >
-                <h1>{item.title}</h1>
+                <img 
+                  src={item.image || Dummy1}
+                  className='rounded-t-3xl min-h-36'
+                  alt={'image'}
+                />
+                <h1 className='mt-2 font-semibold'>{item.title}</h1>
               </div>
             )
           
