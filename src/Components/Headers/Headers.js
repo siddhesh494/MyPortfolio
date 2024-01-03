@@ -3,19 +3,18 @@
 const Header = () => {
 
   return (
-    <div className="header-container">
+    <div className="p-5 grid grid-cols-12">
       
-      <div>
-        <h1>SID</h1>
+      <div className="col-span-6 flex justify-center">
+        <h1 className="text-7xl">SID</h1>
       </div>
-      <div>
-        <ul>
-          <li>About</li>
-          <li>Experience</li>
-          <li>Project</li>
-          <li>Blog</li>
-          <li>Contact</li>
-
+      <div className=" col-span-6 grid content-center">
+        <ul className="grid grid-cols-5 gap-5">
+          <li className="text-xl">About</li>
+          <li className="text-xl">Experience</li>
+          <li className="text-xl">Project</li>
+          <li className="text-xl">Blog</li>
+          <li className="text-xl">Contact</li>
         </ul>
       </div>
     </div>

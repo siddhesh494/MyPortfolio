@@ -1,9 +1,17 @@
-
+import About from "./About"
+import Blog from "./Blog"
+import Experience from "./Experience"
+import Home from "./Home"
 const Body = () => {
 
 
   return (
-    <h1>Body</h1>
+    <>
+      <Home />
+      <About />
+      <Experience />
+      <Blog />
+    </>
   )
 }
 
