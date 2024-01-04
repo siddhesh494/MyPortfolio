@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className="my-28">
       <div className="flex flex-col text-center">
-        <span className="text-md">Get In Touch</span>
+        <span className="text-md text-slate-800">Get In Touch</span>
         <span className="text-4xl">Contact Me</span>
       </div>
 

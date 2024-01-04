@@ -63,7 +63,7 @@ const Blog = () => {
   return (
     <div className="my-28">
       <div className="flex flex-col text-center">
-        <span className="text-md">Read My Recent</span>
+        <span className="text-md text-slate-800">Read My Recent</span>
         <span className="text-4xl">Blogs</span>
       </div>
 

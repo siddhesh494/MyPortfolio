@@ -8,17 +8,17 @@ const About = () => {
   return (
     <div className=" my-28">
       <div className="flex flex-col text-center">
-        <span className="text-md">Get To Know Me</span>
+        <span className="text-md text-slate-800">Get To Know Me</span>
         <span className="text-4xl">About Me</span>
       </div>
 
-      <div className="flex justify-center gap-10 mt-5 flex-col lg:flex-row">
-      <div className="flex justify-center">
-        <img 
-        src={MyPhoto1}
-        className='rounded-full h-72'
-        />
-      </div>
+      <div className="flex justify-center gap-10 mt-5 flex-col items-center lg:flex-row">
+        <div className="flex justify-center">
+          <img 
+          src={MyPhoto1}
+          className='rounded-full h-72'
+          />
+        </div>
 
         <div className="flex justify-center flex-col items-center mx-10">
           <div className="flex flex-col gap-10 sm:flex-row ">

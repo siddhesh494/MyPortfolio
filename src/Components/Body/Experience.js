@@ -6,7 +6,7 @@ const Experience = () => {
   return (
     <div className="my-28">
       <div className="flex flex-col text-center">
-        <span className="text-md">Explore My</span>
+        <span className="text-md text-slate-800">Explore My</span>
         <span className="text-4xl">Experience</span>
       </div>
 

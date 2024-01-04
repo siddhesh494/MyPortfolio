@@ -2,6 +2,7 @@
 
 import Header from "../Headers/Headers"
 import { Outlet } from 'react-router-dom'
+import '../../App.css'
 
 const AppLayout = () => {
 

@@ -14,7 +14,7 @@ const Home = () => {
         />
       </div>
       <div className=" flex flex-col text-center justify-center items-center">
-        <span className="text-xl">Hello I'm</span>
+        <span className="text-xl text-slate-800">Hello I'm</span>
         <span className="text-3xl">Siddhesh Shinde</span>
         <span className="text-2xl">I'm a Full Stack Developer</span>
         <div className='mt-3'>
