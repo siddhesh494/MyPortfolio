@@ -81,7 +81,7 @@ const Blog = () => {
                 <img 
                   src={item.image || Dummy1}
                   className='rounded-t-3xl min-h-36'
-                  alt={'image'}
+                  alt='img'
                 />
                 <h1 className='mt-2 font-semibold'>{item.title}</h1>
               </div>
@@ -103,6 +103,7 @@ const Blog = () => {
             <img 
               src={UpArrow}
               className='w-5'
+              alt="img"
             />
             <button>
               Show Less
@@ -117,6 +118,7 @@ const Blog = () => {
             <img 
               src={DownArrow}
               className='w-5'
+              alt="img"
             />
             <button>
               Show More

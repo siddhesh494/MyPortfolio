@@ -17,13 +17,14 @@ const About = () => {
           <img 
           src={MyPhoto1}
           className='rounded-full h-72'
+          alt="img"
           />
         </div>
 
         <div className="flex justify-center flex-col items-center mx-10">
           <div className="flex flex-col gap-10 sm:flex-row ">
             <div className="border border-black py-5 px-20 rounded-3xl flex items-center text-center flex-col hover:shadow-xl">
-              <img src={Job} className='w-7' />
+              <img src={Job} className='w-7' alt="img" />
               
               <span className="font-bold">Experience</span>
               <span>2+ Year</span>
@@ -31,7 +32,7 @@ const About = () => {
             </div>
 
             <div className="border border-black py-5 px-20 rounded-3xl flex items-center text-center flex-col hover:shadow-xl">
-              <img src={Education} className='w-7' />
+              <img src={Education} className='w-7' alt="img" />
               <span className="font-bold">Education</span>
               <span>Bachelor of Engineering</span>
               <span>Higher Secondary Certificate </span>

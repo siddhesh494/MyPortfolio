@@ -11,6 +11,7 @@ const Home = () => {
         <img 
         src={MyPhoto1}
         className='rounded-full h-72'
+        alt="img"
         />
       </div>
       <div className=" flex flex-col text-center justify-center items-center">
@@ -34,6 +35,7 @@ const Home = () => {
             onClick={() => {
               window.open(LINKEDLN_LINK, "_newtab")
             }}
+            alt="img"
           />
           <img 
             src={Medium}
@@ -41,6 +43,7 @@ const Home = () => {
             onClick={() => {
               window.open(MEDIUM_LINK, "_newtab")
             }}
+            alt="img"
           />
         </div>
         

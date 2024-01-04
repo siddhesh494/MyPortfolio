@@ -22,6 +22,7 @@ const Contact = () => {
             <img
               src={envelop}
               className='w-6'
+              alt="img"
             />
             <span>siddhesh.ss26@gmail.com</span>
           </div>
@@ -35,6 +36,7 @@ const Contact = () => {
             <img 
               src={linkedln}
               className='w-6'
+              alt="img"
             />
             <span>Linkedln</span>
           </div>
