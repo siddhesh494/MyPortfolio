@@ -64,9 +64,9 @@ const Blog = () => {
   // }
 
   return (
-    <div className="my-28">
+    <div className="my-28 dark:text-white">
       <div className="flex flex-col text-center">
-        <span className="text-md text-slate-800">{lang[language]?.blog?.readMyRecent}</span>
+        <span className="text-md text-slate-800 dark:text-blue-700">{lang[language]?.blog?.readMyRecent}</span>
         <span className="text-4xl">{lang[language]?.blog?.blogs}</span>
       </div>
 
@@ -75,7 +75,7 @@ const Blog = () => {
         {map(blog, (item) => {
             return (
               <div 
-                className="cursor-pointer border border-zinc-300 rounded-3xl w-56 pb-4 text-center hover:shadow-xl"
+                className="cursor-pointer border border-zinc-300 dark:border-blue-700 dark:hover:shadow-blue-700 dark:hover:shadow-lg rounded-3xl w-56 pb-4 text-center hover:shadow-xl"
                 key={item.id}
                 onClick={() => {
                   window.open(item.blogLink,'_newtab')
@@ -105,7 +105,7 @@ const Blog = () => {
           >
             <img 
               src={UpArrow}
-              className='w-5'
+              className='w-5 dark:invert dark:brightness-0'
               alt="img"
             />
             <button>
@@ -120,7 +120,7 @@ const Blog = () => {
           >
             <img 
               src={DownArrow}
-              className='w-5'
+              className='w-5 dark:invert dark:brightness-0'
               alt="img"
             />
             <button>

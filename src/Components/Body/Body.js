@@ -9,14 +9,14 @@ const Body = () => {
 
 
   return (
-    <>
+    <div className="dark:bg-black pb-32">
       <Headers />
       <Home />
       <About />
       <Experience />
       <Blog />
       <Contact />
-    </>
+    </div>
   )
 }
 
