@@ -1,5 +1,5 @@
 import { map } from "lodash"
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { LANGUAGE_DROPDOWN } from "../../Common/Constant"
 import { useDispatch } from "react-redux"
 import { changeLanguage } from "../../utils/languageSlice"
@@ -15,13 +15,17 @@ const Header = () => {
     // console.log(e.target.value)
     dispatch(changeLanguage(e.target.value))
   }
-  const handleThemeChange = () => {
-    setIsDarkMode(prev => !prev)
+  useEffect(() => {
     if(isDarkMode) {
       document.documentElement.classList.add('dark')
     } else {
       document.documentElement.classList.remove('dark')
     }
+  }, [isDarkMode])
+  const handleThemeChange = () => {
+    
+    setIsDarkMode(prev => !prev)
+
   }
 
   return (
@@ -45,7 +49,7 @@ const Header = () => {
         </div>
         <div className="ml-10">
           <img
-            src={isDarkMode ? DarkModeIcon : LightModeIcon}
+            src={isDarkMode ? LightModeIcon  : DarkModeIcon}
             alt={'lightMode'}
             className="w-8 cursor-pointer"
             onClick={handleThemeChange}
