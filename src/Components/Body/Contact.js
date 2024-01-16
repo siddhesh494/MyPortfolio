@@ -8,7 +8,7 @@ const Contact = () => {
   const language = useSelector(store => store.language.language)
 
   return (
-    <div className=" mx-10 dark:text-white">
+    <div className=" mx-10">
       <div className="flex flex-col text-center">
         <span className="text-md text-slate-800 dark:text-blue-700">{lang[language]?.contactMe?.getInTouch}</span>
         <span className="text-4xl">{lang[language]?.contactMe?.contact}</span>
@@ -27,7 +27,7 @@ const Contact = () => {
               className='w-6 dark:brightness-0 dark:invert'
               alt="img"
             />
-            <span>siddhesh.ss26@gmail.com</span>
+            <span className=' dark:text-white'>siddhesh.ss26@gmail.com</span>
           </div>
 
           <div 
@@ -41,7 +41,7 @@ const Contact = () => {
               className='w-6 dark:brightness-0 dark:invert'
               alt="img"
             />
-            <span>Linkedln</span>
+            <span className=' dark:text-white'>Linkedln</span>
           </div>
         </div>
       </div>

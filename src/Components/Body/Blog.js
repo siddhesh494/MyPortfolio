@@ -64,10 +64,10 @@ const Blog = () => {
   // }
 
   return (
-    <div className="my-28 dark:text-white">
+    <div className="my-28">
       <div className="flex flex-col text-center">
         <span className="text-md text-slate-800 dark:text-blue-700">{lang[language]?.blog?.readMyRecent}</span>
-        <span className="text-4xl">{lang[language]?.blog?.blogs}</span>
+        <span className="text-4xl dark:text-white">{lang[language]?.blog?.blogs}</span>
       </div>
 
       <div className='flex justify-center'>
@@ -86,7 +86,7 @@ const Blog = () => {
                   className='rounded-t-3xl min-h-36'
                   alt='img'
                 />
-                <h1 className='mt-2 font-semibold'>{item.title}</h1>
+                <h1 className='mt-2 font-semibold dark:text-white'>{item.title}</h1>
               </div>
             )
           
@@ -108,7 +108,7 @@ const Blog = () => {
               className='w-5 dark:invert dark:brightness-0'
               alt="img"
             />
-            <button>
+            <button className=' dark:text-white'>
               Show Less
             </button>
           </div>
@@ -123,7 +123,7 @@ const Blog = () => {
               className='w-5 dark:invert dark:brightness-0'
               alt="img"
             />
-            <button>
+            <button className=' dark:text-white'>
               {lang[language]?.blog?.showMore}
             </button>
           </div>
