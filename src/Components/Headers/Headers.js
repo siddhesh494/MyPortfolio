@@ -1,23 +1,38 @@
-
+import { map } from "lodash"
+import { LANGUAGE_DROPDOWN } from "../../Common/Constant"
+import { useDispatch } from "react-redux"
+import { changeLanguage } from "../../utils/languageSlice"
 
 const Header = () => {
 
+  const dispatch = useDispatch()
+
+  const handleLanguageChange = (e) => {
+    // console.log(e.target.value)
+    dispatch(changeLanguage(e.target.value))
+  }
   return (
-    <div className="p-5 grid grid-cols-12">
-      
-      <div className="col-span-6 flex justify-center">
-        <h1 className="text-7xl">SID</h1>
-      </div>
-      <div className=" col-span-6 grid content-center">
-        <ul className="grid grid-cols-5 gap-5">
-          <li className="text-xl">About</li>
-          <li className="text-xl">Experience</li>
-          <li className="text-xl">Project</li>
-          <li className="text-xl">Blog</li>
-          <li className="text-xl">Contact</li>
-        </ul>
+    <div className="p-5 flex justify-center">
+      <div className="flex items-center justify-end w-2/3">
+        {/*       
+        <div className="grid grid-cols-6 justify-center">
+          <h1 className="text-7xl">SID</h1>
+        </div> */}
+
+        <div className="">
+          <select 
+            onChange={handleLanguageChange}
+            className="border border-black rounded-md py-2 px-4"
+          >
+            {map(LANGUAGE_DROPDOWN, (item) => {
+              return <option key={item.identifier} value={item.identifier} >{item.name}</option>
+            })}
+          </select>
+        </div>
+        
       </div>
     </div>
+    
   )
 }
 

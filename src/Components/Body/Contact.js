@@ -1,14 +1,17 @@
+import { useSelector } from 'react-redux'
 import envelop from '../../assests/PNGs/envelope.png'
 import linkedln from '../../assests/PNGs/linkedin.png'
 import { EMAIL_LINK, LINKEDLN_LINK } from '../../Common/Constant' 
+import lang from '../../Common/languageConstant'
 
 const Contact = () => {
+  const language = useSelector(store => store.language.language)
 
   return (
     <div className="my-28 mx-10">
       <div className="flex flex-col text-center">
-        <span className="text-md text-slate-800">Get In Touch</span>
-        <span className="text-4xl">Contact Me</span>
+        <span className="text-md text-slate-800">{lang[language]?.contactMe?.getInTouch}</span>
+        <span className="text-4xl">{lang[language]?.contactMe?.contact}</span>
       </div>
 
       <div className="flex justify-center mt-5">

@@ -1,10 +1,15 @@
+import { useSelector } from 'react-redux'
 import MyPhoto1 from '../../assests/Photos/my2.jpg'
 import Linkedln from '../../assests/PNGs/linkedin.png'
 import Medium from '../../assests/PNGs/medium.png'
 import { LINKEDLN_LINK, MEDIUM_LINK } from '../../Common/Constant'
+import lang from '../../Common/languageConstant'
 
 const Home = () => {
-
+  const language = useSelector(store => store.language.language)
+  // console.log(language)
+  
+  
   return (
     <div className="mt-20 flex gap-x-20 gap-y-10 justify-center flex-col my-5 md:flex-row ">
       <div className="flex justify-center">
@@ -15,9 +20,9 @@ const Home = () => {
         />
       </div>
       <div className=" flex flex-col text-center justify-center items-center">
-        <span className="text-xl text-slate-800">Hello I'm</span>
-        <span className="text-3xl">Siddhesh Shinde</span>
-        <span className="text-2xl">I'm a Full Stack Developer</span>
+        <span className="text-xl text-slate-800">{lang[language]?.home?.helloText}</span>
+        <span className="text-3xl">{lang[language]?.home?.name}</span>
+        <span className="text-2xl">{lang[language]?.home?.aboutText}</span>
         <div className='mt-3'>
           <a
             className='px-6 py-2 border border-black rounded-xl hover:bg-black hover:text-white'
@@ -25,7 +30,7 @@ const Home = () => {
             download="Siddhesh_Shinde_CV.pdf"
             
           >
-            Download CV
+            {lang[language]?.home?.donwloadCV}
           </a>
         </div>
         <div className='mt-3 flex gap-x-4'>

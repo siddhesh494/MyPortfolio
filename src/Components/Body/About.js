@@ -1,15 +1,18 @@
 import MyPhoto1 from '../../assests/Photos/my3.jpg'
 import Education from '../../assests/PNGs/graduation-cap.png'
 import Job from '../../assests/PNGs/briefcase.png'
+import { useSelector } from 'react-redux'
+import lang from '../../Common/languageConstant'
 
 
 const About = () => {
+  const language = useSelector(store => store.language.language)
 
   return (
     <div className=" my-28">
       <div className="flex flex-col text-center">
-        <span className="text-md text-slate-800">Get To Know Me</span>
-        <span className="text-4xl">About Me</span>
+        <span className="text-md text-slate-800">{lang[language]?.aboutMe?.knowMe}</span>
+        <span className="text-4xl">{lang[language]?.aboutMe?.aboutMe}</span>
       </div>
 
       <div className="flex justify-center gap-10 mt-5 flex-col items-center lg:flex-row">
@@ -26,27 +29,25 @@ const About = () => {
             <div className="border border-black py-5 px-20 rounded-3xl flex items-center text-center flex-col hover:shadow-xl">
               <img src={Job} className='w-7' alt="img" />
               
-              <span className="font-bold">Experience</span>
-              <span>2+ Year</span>
-              <span>Full Stack Developer</span>
+              <span className="font-bold">{lang[language]?.aboutMe?.experience}</span>
+              <span>{lang[language]?.aboutMe?.year}</span>
+              <span>{lang[language]?.aboutMe?.fsd}</span>
             </div>
 
             <div className="border border-black py-5 px-20 rounded-3xl flex items-center text-center flex-col hover:shadow-xl">
               <img src={Education} className='w-7' alt="img" />
-              <span className="font-bold">Education</span>
-              <span>Bachelor of Engineering</span>
-              <span>Higher Secondary Certificate </span>
+              <span className="font-bold">{lang[language]?.aboutMe?.education}</span>
+              <span>{lang[language]?.aboutMe?.eng}</span>
+              <span>{lang[language]?.aboutMe?.hsc}</span>
             </div>
 
           </div>
           <div className="max-w-[40rem] mt-5 flex flex-col">
             <span>
-              I am a Software developer with 2+ years of experience in writing efficient and reusable code. 
-              I help companies to achieve their product development target. The technology I am familiar with is Javascript,
-              Typescript, Node.js, Express.js, and React.
+              {lang[language]?.aboutMe?.aboutMe1}
             </span>
             <span className="mt-1">
-              I love to apply my software development experience to help tech companies create their required product.
+              {lang[language]?.aboutMe?.aboutMe2}
             </span>
           </div>
         </div>

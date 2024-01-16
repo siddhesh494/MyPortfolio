@@ -78,3 +78,22 @@ export const LINKEDLN_LINK = "https://www.linkedin.com/in/siddhesh-shinde-develo
 export const EMAIL_LINK = "https://mail.google.com/mail/u/1/#inbox?compose=CllgCJvrcCpCdcTFmLCjhPFhtXCFcCCSTkfDBFMGBVHGlgZvpbnthKhGgpTPcRrXdLBqLNHfhGq"
 
 export const MEDIUM_LINK = "https://medium.com/@siddhesh.ss26"
+
+export const LANGUAGE_DROPDOWN = [
+  {
+    identifier: "en",
+    name: "English"
+  },
+  {
+    identifier: "hindi",
+    name: "Hindi"
+  },
+  // {
+  //   identifier: "marathi",
+  //   name: "Marathi"
+  // },
+  {
+    identifier: "spanish",
+    name: "Spanish"
+  },
+]

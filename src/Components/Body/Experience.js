@@ -1,13 +1,17 @@
 
+import { useSelector } from 'react-redux'
 import { EXPERIENCE } from '../../Common/Constant'
 import { map } from 'lodash'
+import lang from '../../Common/languageConstant'
+
 const Experience = () => {
+  const language = useSelector(store => store.language.language)
 
   return (
     <div className="my-28">
       <div className="flex flex-col text-center">
-        <span className="text-md text-slate-800">Explore My</span>
-        <span className="text-4xl">Experience</span>
+        <span className="text-md text-slate-800">{lang[language]?.experience?.exploreMy}</span>
+        <span className="text-4xl">{lang[language]?.experience?.experience}</span>
       </div>
 
       <div className="flex flex-col gap-10 justify-center mt-5 items-center  md:flex-row md:items-start mx-10">

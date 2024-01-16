@@ -4,8 +4,11 @@ import UpArrow from '../../assests/PNGs/angle-up.png'
 import DownArrow from '../../assests/PNGs/angle-down.png'
 import mediumBlog from '../../MockData/mediumBlog.json'
 import Dummy1 from '../../assests/Photos/d1.jpg'
+import lang from '../../Common/languageConstant'
+import { useSelector } from 'react-redux'
 
 const Blog = () => {
+  const language = useSelector(store => store.language.language)
   // const [myAllPost, setMyAllPost] = useState([])
   const [showMoreBlog, setShowMoreBlog] = useState(false)
   const [blog, setBlog] = useState([])
@@ -63,8 +66,8 @@ const Blog = () => {
   return (
     <div className="my-28">
       <div className="flex flex-col text-center">
-        <span className="text-md text-slate-800">Read My Recent</span>
-        <span className="text-4xl">Blogs</span>
+        <span className="text-md text-slate-800">{lang[language]?.blog?.readMyRecent}</span>
+        <span className="text-4xl">{lang[language]?.blog?.blogs}</span>
       </div>
 
       <div className='flex justify-center'>
@@ -121,7 +124,7 @@ const Blog = () => {
               alt="img"
             />
             <button>
-              Show More
+              {lang[language]?.blog?.showMore}
             </button>
           </div>
         )}
