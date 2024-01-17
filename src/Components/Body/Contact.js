@@ -11,7 +11,7 @@ const Contact = () => {
     <div className=" mx-10">
       <div className="flex flex-col text-center">
         <span className="text-md text-slate-800 dark:text-blue-700">{lang[language]?.contactMe?.getInTouch}</span>
-        <span className="text-4xl">{lang[language]?.contactMe?.contact}</span>
+        <span className="text-4xl dark:text-white">{lang[language]?.contactMe?.contact}</span>
       </div>
 
       <div className="flex justify-center mt-5">
