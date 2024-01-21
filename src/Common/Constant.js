@@ -21,7 +21,7 @@ export const EXPERIENCE = {
       level: "Experienced"
     },
     {
-      technology: "Express.js",
+      technology: "ExpressJS",
       level: "Experienced"
     },
     {

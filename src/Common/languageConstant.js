@@ -18,7 +18,7 @@ const lang = {
       education: 'Education',
       eng: 'Bachelor of Engineering',
       hsc: 'Higher Secondary Certificate',
-      aboutMe1: 'I am a Software developer with 2+ years of experience in writing efficient and reusable code. I help companies to achieve their product development target. The technology I am familiar with is Javascript, Typescript, Node.js, Express.js, and React.',
+      aboutMe1: 'I am a Software developer with 2+ years of experience in writing efficient and reusable code. I help companies to achieve their product development target. The technology I am familiar with is Javascript, Typescript, Node.js, ExpressJS, and React.',
       aboutMe2: 'I love to apply my software development experience to help tech companies create their required product.'
 
     },
@@ -85,7 +85,7 @@ const lang = {
       education: 'Educación',
       eng: 'Bachelor of Engineering',
       hsc: 'Higher Secondary Certificate',
-      aboutMe1: 'Soy un desarrollador de software con más de 2 años de experiencia escribiendo código eficiente y reutilizable. Ayudo a las empresas a alcanzar su objetivo de desarrollo de productos. La tecnología con la que estoy familiarizado es Javascript, Typecript, Node.js, Express.js y React.',
+      aboutMe1: 'Soy un desarrollador de software con más de 2 años de experiencia escribiendo código eficiente y reutilizable. Ayudo a las empresas a alcanzar su objetivo de desarrollo de productos. La tecnología con la que estoy familiarizado es Javascript, Typecript, Node.js, ExpressJS y React.',
       aboutMe2: 'Me encanta aplicar mi experiencia en desarrollo de software para ayudar a las empresas de tecnología a crear el producto que necesitan.'
 
     },
