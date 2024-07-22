@@ -29,7 +29,7 @@
     "image": "https://assets.turbologo.com/blog/en/2019/08/19085031/netflix-short-version-logo.png",
     "link": {
       "frontend": "https://github.com/siddhesh494/NetflixGPT",
-      "demoLink": "https://netflixgpt.netlify.app/"
+      "demoLink": "https://netflix-gpt-bice-chi.vercel.app/"
     },
     "technologyUsed": ["ReactJS", "Redux Toolkit", "Firebase (Authentication)", "Tailwind CSS", "React Router"],
     "aboutThisProject": {
