@@ -4,6 +4,7 @@ import Contact from "./Contact"
 import Experience from "./Experience"
 import Home from "./Home"
 import Headers from '../Headers/Headers'
+import Project from "./Project"
 
 const Body = () => {
 
@@ -14,6 +15,7 @@ const Body = () => {
       <Home />
       <About />
       <Experience />
+      <Project />
       <Blog />
       <Contact />
     </div>

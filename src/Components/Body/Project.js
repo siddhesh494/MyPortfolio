@@ -1,82 +1,57 @@
-import { map, filter } from 'lodash'
-import { useEffect, useState } from 'react'
-import UpArrow from '../../assests/PNGs/angle-up.png'
-import DownArrow from '../../assests/PNGs/angle-down.png'
-import mediumBlog from '../../MockData/mediumBlog.json'
-import Dummy1 from '../../assests/Photos/d1.jpg'
+import { filter, map } from 'lodash'
+import React, { useState, useEffect } from 'react'
 import lang from '../../Common/languageConstant'
 import { useSelector } from 'react-redux'
+import DownArrow from '../../assests/PNGs/angle-down.png'
+import UpArrow from '../../assests/PNGs/angle-up.png'
+import PROJECTS from '../../MockData/project.json'
+import Dummy1 from '../../assests/Photos/d1.jpg'
+import ViewProject from '../Modal/ViewProject'
 
-const Blog = () => {
+const Project = () => {
   const language = useSelector(store => store.language.language)
-  // const [myAllPost, setMyAllPost] = useState([])
-  const [showMoreBlog, setShowMoreBlog] = useState(false)
-  const [blog, setBlog] = useState([])
+  const [showMoreProject, setShowMoreProject] = useState(false)
+  const [showViewProject, setShowViewProject] = useState(false)
+  const [clickedProject, setClickedProject] = useState({})
+  const [projects, setProjects] = useState([])
 
   useEffect(() => {
-    // fetchPost()
-  }, [])
-
-  useEffect(() => {
-    if(showMoreBlog) {
-      setBlog([...mediumBlog])
-      
+    if(showMoreProject) {
+      setProjects([...PROJECTS])
     } else {
-      const t = filter(mediumBlog, (item, index) => {
+      const t = filter(PROJECTS, (item, index) => {
         if(index < 3)
           return true
         return false
       })
-      setBlog([...t])
+      setProjects([...t])
     }
-  }, [showMoreBlog])
-
-  // const fetchPost = async () => {
-
-  //   try {
-  //     // const data = await fetch('https://v1.nocodeapi.com/siddhesh/medium/NjsgkBetsAfcCspI')
-  //     // const post = await data.json()
-  //     // console.log(post)
-
-  //     const post = mediumBlog
-  //     console.log(post)
-  //     const finalData = map(post, (item) => {
-  //       return {
-  //         id: item.id,
-  //         title: item.title,
-  //         blogLink: item.link,
-  //         // html: item.content
-  //       }
-  //     })
-  //     setMyAllPost([...finalData])
-  //     const t = filter(finalData, (item, index) => {
-  //       if(index < 3)
-  //         return true
-  //       return false
-  //     })
-  //     setBlog([...t])
-
-  //   } catch (error) {
-  //     console.log(error)
-  //   }
-  // }
+  }, [showMoreProject])
 
   return (
+    <>
+    <ViewProject
+      showModal={showViewProject}
+      setShowModal={setShowViewProject}
+      clickedProject={clickedProject}
+      setClickedProject={setClickedProject}
+    />
     <div className="my-28">
       <div className="flex flex-col text-center">
-        <span className="text-md text-slate-800 dark:text-blue-700">{lang[language]?.blog?.readMyRecent}</span>
-        <span className="text-4xl dark:text-white">{lang[language]?.blog?.blogs}</span>
+        <span className="text-md text-slate-800 dark:text-blue-700">{lang[language]?.project?.tryOutMy}</span>
+        <span className="text-4xl dark:text-white">{lang[language]?.project?.project}</span>
       </div>
 
       <div className='flex justify-center'>
         <div className="flex flex-wrap flex-1 gap-y-10 justify-around max-w-[800px] justify-items-center mt-5">
-        {map(blog, (item) => {
+        {map(projects, (item) => {
             return (
               <div 
                 className="cursor-pointer border border-zinc-300 dark:border-blue-700 dark:hover:shadow-blue-700 dark:hover:shadow-lg rounded-3xl w-56 pb-4 text-center hover:shadow-xl"
                 key={item.id}
                 onClick={() => {
-                  window.open(item.blogLink,'_newtab')
+                  setClickedProject(item)
+                  setShowViewProject(true)
                 }}
               >
                 <img 
@@ -95,10 +70,10 @@ const Blog = () => {
       </div>
     
       <div className='flex justify-center mt-2'>
-        {showMoreBlog ? (
+        {showMoreProject ? (
           <div className='flex gap-2'
             onClick={() => {
-              setShowMoreBlog(prev => !prev)
+              setShowMoreProject(prev => !prev)
             }}
           >
             <img 
@@ -113,7 +88,7 @@ const Blog = () => {
         ) : (
           <div className='flex gap-2'
             onClick={() => {
-              setShowMoreBlog(prev => !prev)
+              setShowMoreProject(prev => !prev)
             }}
           >
             <img 
@@ -130,7 +105,9 @@ const Blog = () => {
         
       </div>
     </div>
+    </>
   )
+
 }
 
-export default Blog
+export default Project

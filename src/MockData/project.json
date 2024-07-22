@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Restaurant Admin",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "link": {
+      "frontend": "https://github.com/siddhesh494/Restaurant_Admin-Web",
+      "backend": "https://github.com/siddhesh494/Restaurant_Admin-Server",
+      "demoLink": ""
+    },
+    "videoLink": {
+      "link": "https://drive.google.com/file/d/1nAzO81hOrpAQZ7F2naUKoAnbgYWCPIl6/preview",
+      "width": 640,
+      "height": 400
+    },
+    "technologyUsed": ["ReactJS", "NodeJS", "ExpressJS", "Typescript", "MongoDB", "TailwindCSS"],
+    "aboutThisProject": {
+      "par0": "This project involved Frontend and Backend.",
+      "par1": "FoodieDelight is a food delivery application, as a part of this application, I have build a functionality that manage different restaurant and their menus.",
+      "par2": "For Frontend i have use React to develop the application, for styling i have use tailwindCSS along with normal css for easy styling.",
+      "par3": "For Backend i have use NodeJS, Express to develop the application, for database I have use mongoDB for easy storing data. I have also use typescript as javascript has dynamic variable, which can give error during runtime. For Validating request body in API i have use joi validation.",
+      "par4": "For Database I have use mongoDB Atlas, which is fully-managed cloud database that handles all the complexity of deploying, managing, and healing your deployments on the cloud service.",
+      "par5": "To indentify the error on production I have use bunyan logger"
+    }
+  },
+  {
+    "id": 2,
+    "title": "NetflixGPT",
+    "image": "https://assets.turbologo.com/blog/en/2019/08/19085031/netflix-short-version-logo.png",
+    "link": {
+      "frontend": "https://github.com/siddhesh494/NetflixGPT",
+      "demoLink": "https://netflixgpt.netlify.app/"
+    },
+    "technologyUsed": ["ReactJS", "Redux Toolkit", "Firebase (Authentication)", "Tailwind CSS", "React Router"],
+    "aboutThisProject": {
+      "par0": "This project involved Frontend.",
+      "par1": "Developed a cutting-edge Netflix clone using React for a robust Frontend, Redux Toolkit for efficient state management, and Tailwind CSS for a sleek and responsive UI. Integrated Firebase Authentication for secure user interactions, including seamless sign-up, login, and logout.",
+      "par2": "Implemented real-time movie data from OpenAI for an extensive catalogue with a dynamic search feature on this scalable and fast-loading platform."
+    }
+  },
+  {
+    "id": 2,
+    "title": "Lords Decor",
+    "image": "https://www.lordsdecor.in/static/media/5.61f6c584.png",
+    "link": {
+      "frontend": "https://github.com/siddhesh494/lord-decor-web",
+      "demoLink": "https://www.lordsdecor.in/"
+    },
+    "technologyUsed": ["ReactJS", "CSS", "CSS Media query", "HTML"],
+    "aboutThisProject": {
+      "par0": "This project involved Frontend.",
+      "par1": "Developed a website using CSS and media Query",
+      "par2": "This website is to showcase the interior design services and products that Lords Decor provide."
+    }
+  },
+  {
+    "id": 4,
+    "title": "Log Reader",
+    "image": "https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "link": {
+      "frontend": "https://github.com/siddhesh494/log-reader",
+      "demoLink": "https://www.lordsdecor.in/"
+    },
+    "technologyUsed": ["ReactJS", "CSS", "CSS Media query", "HTML"],
+    "aboutThisProject": {
+      "par0": "This project involved Frontend.",
+      "par1": "This project is created for easy log reading.",
+      "par2": "Lets say we are using a logger like Bunyan, To see the flow of you backend application we log the details and if error accur we also log that so that it will be easy for us to identify it later in production environment.",
+      "par3": "But to read this logs in our terminal is not easy, so i created Log Reader which will convert your logs into table like structure.",
+      "par4": "To use this you just have to copy past the logs printed on terminal to Log Reader.",
+      "par5": "It is like kibana, but for lower environment."
+    }
+  }
+]
