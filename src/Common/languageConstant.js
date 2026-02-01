@@ -12,12 +12,12 @@ const lang = {
       knowMe: 'Get To Know Me',
       aboutMe: 'About Me',
       experience: 'Experience',
-      year: "3 Year",
+      year: "4+ Year",
       fsd: 'Full Stack Developer',
       education: 'Education',
       eng: 'Bachelor of Engineering',
       hsc: 'Higher Secondary Certificate',
-      aboutMe1: 'I am a Software developer with 3 years of experience in writing efficient and reusable code. I help companies to achieve their product development target. The technology I am familiar with is Javascript, Typescript, Node.js, ExpressJS, and React.',
+      aboutMe1: 'I am a Software developer with 4+ years of experience in writing efficient and reusable code. I help companies to achieve their product development target. The technology I am familiar with is Javascript, Typescript, Node.js, ExpressJS, and React.',
       aboutMe2: 'I love to apply my software development experience to help tech companies create their required product.'
     },
     experience: {
