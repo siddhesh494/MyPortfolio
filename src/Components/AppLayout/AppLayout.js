@@ -11,7 +11,11 @@ const AppLayout = () => {
 
   useEffect(() => {
 		createChat({
-			webhookUrl: 'https://siddhesh.app.n8n.cloud/webhook/b11ba312-fa8d-438a-b2cd-77bafae88a8d/chat'
+			webhookUrl: 'https://siddhesh.app.n8n.cloud/webhook/b11ba312-fa8d-438a-b2cd-77bafae88a8d/chat',
+      initialMessages: [
+        'Hi there! 👋',
+        'What do you want to know about Siddhesh?',
+      ]
 		});
 	}, []);
 
